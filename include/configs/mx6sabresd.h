@@ -21,7 +21,7 @@
 #define CONFIG_MACH_TYPE	3980
 #define CONFIG_MXC_UART_BASE	UART1_BASE
 #define CONFIG_CONSOLE_DEV		"ttymxc0"
-#define CONFIG_MMCROOT			"/dev/mmcblk2p2"  /* SDHC3 */
+#define CONFIG_MMCROOT			"/dev/mmcblk1p2"  /* SDHC3 */  //modify by xqb  SDHC2
 #if defined(CONFIG_MX6QP)
 #define CONFIG_DEFAULT_FDT_FILE	"imx6qp-sabresd.dtb"
 #define PHYS_SDRAM_SIZE		(1u * 1024 * 1024 * 1024)

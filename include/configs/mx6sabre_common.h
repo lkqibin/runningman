@@ -81,12 +81,20 @@
 #define CONFIG_FEC_MXC
 #define CONFIG_MII
 #define IMX_FEC_BASE			ENET_BASE_ADDR
-#define CONFIG_FEC_XCV_TYPE		RGMII
 #define CONFIG_ETHPRIME			"FEC"
 #define CONFIG_FEC_MXC_PHYADDR		1
 
-#define CONFIG_PHYLIB
+/*#define CONFIG_NET_RGMII*/
+#ifdef CONFIG_NET_RGMII
+#define CONFIG_FEC_XCV_TYPE		RGMII
 #define CONFIG_PHY_ATHEROS
+#else
+#define CONFIG_FEC_XCV_TYPE		RMII
+#define CONFIG_PHY_MICREL
+#endif
+
+#define CONFIG_PHYLIB
+
 
 /* allow to overwrite serial and ethaddr */
 #define CONFIG_ENV_OVERWRITE

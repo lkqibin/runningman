@@ -539,7 +539,7 @@ void board_init_r(gd_t *id, ulong dest_addr)
 #ifdef CONFIG_ARCH_EARLY_INIT_R
 	arch_early_init_r();
 #endif
-	power_init_board();
+	//power_init_board();
 
 #if !defined(CONFIG_SYS_NO_FLASH)
 	puts("Flash: ");

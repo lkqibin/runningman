@@ -301,14 +301,14 @@ static void setup_spi(void)
 
 struct i2c_pads_info i2c_pad_info1 = {
 	.scl = {
-		.i2c_mode = MX6_PAD_CSI0_DAT9__I2C1_SCL
+		.i2c_mode = MX6_PAD_EIM_D21__I2C1_SCL
 				| MUX_PAD_CTRL(I2C_PAD_CTRL),
 		.gpio_mode = MX6_PAD_CSI0_DAT9__GPIO5_IO27
 				| MUX_PAD_CTRL(I2C_PAD_CTRL),
 		.gp = IMX_GPIO_NR(5, 27)
 	},
 	.sda = {
-		.i2c_mode = MX6_PAD_CSI0_DAT8__I2C1_SDA
+		.i2c_mode = MX6_PAD_EIM_D28__I2C1_SDA
 				| MUX_PAD_CTRL(I2C_PAD_CTRL),
 		.gpio_mode = MX6_PAD_CSI0_DAT8__GPIO5_IO26
 				| MUX_PAD_CTRL(I2C_PAD_CTRL),
